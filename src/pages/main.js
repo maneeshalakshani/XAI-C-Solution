@@ -5,6 +5,7 @@ import Introduction from '../components/Introduction/Introduction';
 import Navbar from '../components/NavBar/Nav';
 import Domain from '../components/Domain/Domain';
 import Milestones from '../components/Milestones/Milestones';
+import DocumentDownload from '../components/Documents/DocumentDownload';
 
 function Main() {
   return (
@@ -14,6 +15,7 @@ function Main() {
       <Introduction />
       <Domain />
       <Milestones />
+      <DocumentDownload />
     </>
   );
 }
