@@ -1,0 +1,143 @@
+.Main-Container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.image-container{
+    /* background-image: url('../assets/images/xai-image.jpg'); */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+}
+
+.image{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.black-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.712);
+}
+
+.header-text{
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 50vh;
+    font-size: 6rem;
+}
+
+/* SECTIONS */
+
+
+/* INTRODUCTION SECTION */
+
+.intro-container{
+    background-color: dodgerblue;
+    color: white;
+    height: 63vh;
+    padding-top: 35vh;
+    padding-bottom: 5vh;
+}
+
+.center{
+    text-align: center;
+}
+
+.large-header{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.medium-header{
+    font-size: 2rem;
+    margin-top: 20px;
+    color: black;
+}
+
+.small-header{
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* DOMAIN SECTION */
+
+.domain-container{
+    background-color: #222222;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.domain-content-box{
+    background-color: white;
+    color: black;
+    /* height: 50vh; */
+    border-radius: 5px;
+    padding: 30px 50px;
+    margin-top: 10px;
+}
+
+.domain-content-box-bg{
+    margin-bottom: 34vh;
+}
+
+.domain-small-content-box{
+    background-color: white;
+    color: black;
+    height: 40vh;
+    width: 20%;
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin-top: 10px;
+    /* margin-right: 20px; */
+}
+
+/* MILESTONES SECTION */
+
+.milestones-container{
+    background-color: dodgerblue;
+    color: white;
+    padding-top: 15vh;
+    padding-bottom: 50px;
+}
+
+.timeline-card{
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    color: black;
+    text-align: center;
+}
+
+.timeline-card-title{
+    font-size: 2rem;
+}
+
+.timeline-card-date{
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #a8a8a8;
+}
+
+.timeline-card-content{
+    margin: 5px 0;
+}
+
+.timeline-card-mark-allocation{
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: right;
+}
