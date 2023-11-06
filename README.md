@@ -5,8 +5,8 @@ https://research-xai-counterfactual.web.app/
 Firebase
 
 ### How to start
-npm i <- in the terminal
-npm start <- start the app
+- npm i <- in the terminal
+- npm start <- start the app
 
 ### Technologies
 React
