@@ -189,3 +189,19 @@
     margin-bottom: 20px;
 }
 
+/* TOOLS & TECHNOLOGIES */
+
+.tools-header{
+    background-color: #242424;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    color: white;
+    margin-top: 20vh;
+    border-radius: 5px;
+}
+
+.tools-container{
+    margin: 25vh 25vh;
+}
+
+

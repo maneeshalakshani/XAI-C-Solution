@@ -6,6 +6,7 @@ import Navbar from '../components/NavBar/Nav';
 import Domain from '../components/Domain/Domain';
 import Milestones from '../components/Milestones/Milestones';
 import DocumentDownload from '../components/Documents/DocumentDownload';
+import ToolsAndTechnologies from '../components/ToolsAndTechnologies/ToolsAndTechnologies';
 
 function Main() {
   return (
@@ -16,6 +17,7 @@ function Main() {
       <Domain />
       <Milestones />
       <DocumentDownload />
+      <ToolsAndTechnologies />
     </>
   );
 }
