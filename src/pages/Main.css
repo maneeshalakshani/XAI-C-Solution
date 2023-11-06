@@ -196,12 +196,37 @@
     padding-top: 5vh;
     padding-bottom: 5vh;
     color: white;
-    margin-top: 20vh;
+    margin-top: 0vh;
     border-radius: 5px;
 }
 
 .tools-container{
-    margin: 25vh 25vh;
+    padding: 25vh 25vh;
+}
+
+
+/* ACHIEVEMENTS SECTION */
+
+.achievements-container{
+    background-color: orange;
+    padding: 10vh 0;
+    color: rgb(240, 233, 233);
+}
+
+.achievements-box{
+    display: flex;
+    margin: 0 20vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.achievements-item{
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+    width: 100%;
+    padding: 20px 50px;
+    text-align: center;
 }
 
 
