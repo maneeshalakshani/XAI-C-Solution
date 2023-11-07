@@ -8,7 +8,7 @@ import Milestones from '../components/Milestones/Milestones';
 import DocumentDownload from '../components/Documents/DocumentDownload';
 import ToolsAndTechnologies from '../components/ToolsAndTechnologies/ToolsAndTechnologies';
 import Achievements from '../components/Achievements/Achievements';
-
+import Teams from '../components/Teams/Teams';
 function Main() {
   return (
     <>
@@ -20,6 +20,7 @@ function Main() {
       <DocumentDownload />
       <ToolsAndTechnologies />
       <Achievements />
+      <Teams />
     </>
   );
 }
