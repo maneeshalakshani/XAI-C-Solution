@@ -5,8 +5,8 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Background from './Background';
-import ResearchProblem from './Problem';
 import ResearchObjective from './Objective';
+import ResearchGap from './ResearchGap';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -80,28 +80,47 @@ export default function BasicTabs() {
         />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <Background 
-            title={'Research Gap'} 
-            text={'jzheh uhg iuhg.s iuksht. ekgj ehgb 5 345 kj345 j.'} 
+        <ResearchGap 
+          title={'Research Gap'}
+          text1={'SHAP-Not Primarily Designed for Counterfactuals. Assumption of Independence. Computational Complexity. model-agnostic Explanation'}
+          text2={'LIME-Not Primarily Designed for Counterfactuals. explanations can be unstable. model-agnostic Explanation'}
+          text3={'DICE-Assumption of Feature Independence. Computationally Intensive. Model agnostic explanation'}
+          text4={"NICE-aims to find the smallest and most meaningful changes to an instance that would alter the model's prediction. Finding the nearest instance and ensuring feasibility can be computationally intensive.. Model agnostic explanation. Limited to binary classification problems."}
         />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        <ResearchProblem 
+        <ResearchGap 
           title={'Research Problem'}
-          text1={'erg aeurg eiug iuhhlh ekjhgaeg iauergi aeiug eriughaeg aiuergberg bgguaerg eirug;aiehg eiughaehg aeiugh;aehg ergiuaehg aegiuha;eig aeiguh;aehg aegiu;aehg iguba;ehgae aeug;ae erg aeurg eiug iuhhlh ekjhgaeg iauergi aeiug eriughaeg aiuergberg bgguaerg eirug;aiehg'}
-          text2={'erg aeurg eiug iuhhlh ekjhgaeg iauergi aeiug eriughaeg aiuergberg bgguaerg eirug;aiehg eiughaehg aeiugh;aehg ergiuaehg aegiuha;eig aeiguh;aehg aegiu;aehg iguba;ehgae aeug;ae erg aeurg eiug iuhhlh ekjhgaeg iauergi aeiug eriughaeg aiuergberg bgguaerg eirug;aieh'}
-          text3={'erg aeurg eiug iuhhlh ekjhgaeg iauergi aeiug eriughaeg aiuergberg bgguaerg eirug;aiehg eiughaehg aeiugh;aehg ergiuaehg aegiuha;eig aeiguh;aehg aegiu;aehg iguba;ehgae aeug;ae erg aeurg eiug iuhhlh ekjhgaeg iauergi aeiug eriughaeg aiuergberg bgguaerg eirug;aieh'}
-          text4={'erg aeurg eiug iuhhlh ekjhgaeg iauergi aeiug eriughaeg aiuergberg bgguaerg eirug;aiehg eiughaehg aeiugh;aehg ergiuaehg aegiuha;eig aeiguh;aehg aegiu;aehg iguba;ehgae aeug;ae erg aeurg eiug iuhhlh ekjhgaeg iauergi aeiug eriughaeg aiuergberg bgguaerg eirug;aieh'}
+          text1={'SVM-How to get a counterfactual rule generation-based explanation for the Support Vector Machine classifier, when it handle  non-linear separable data in text classification?'}
+          text2={'LR-How to get a counterfactual rule generation-based explanation for the Logistic Regression classifier when it becomes black box in text classification?'}
+          text3={'RF-How to get a counterfactual rule generation-based explanation for the Random Forest classifier, when it becomes black box in text classification?'}
+          text4={'KNN-How to get a counterfactual rule generation-based explanation for the k-NN classifier, when it handle  High Dimensionality problem in text classification?'}
         />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
         <ResearchObjective
-          title={'Research Problem'}
-          description={'j b.ksb rib rbi;rth sr h bsrit;hsrh ie;ho srjti;hjisrt aiorg;aeg ihia.th'}
-          text1={'erg aeurg eiug iuhhlh ekjhgaeg iauergi aeiug eriughaeg aiuergberg bgguaerg eirug;aiehg eiughaehg aeiugh;aehg ergiuaehg aegiuha;eig aeiguh;aehg aegiu;aehg iguba;ehgae aeug;ae erg aeurg eiug iuhhlh ekjhgaeg iauergi aeiug eriughaeg aiuergberg bgguaerg eirug;aiehg'}
-          text2={'erg aeurg eiug iuhhlh ekjhgaeg iauergi aeiug eriughaeg aiuergberg bgguaerg eirug;aiehg eiughaehg aeiugh;aehg ergiuaehg aegiuha;eig aeiguh;aehg aegiu;aehg iguba;ehgae aeug;ae erg aeurg eiug iuhhlh ekjhgaeg iauergi aeiug eriughaeg aiuergberg bgguaerg eirug;aieh'}
-          text3={'erg aeurg eiug iuhhlh ekjhgaeg iauergi aeiug eriughaeg aiuergberg bgguaerg eirug;aiehg eiughaehg aeiugh;aehg ergiuaehg aegiuha;eig aeiguh;aehg aegiu;aehg iguba;ehgae aeug;ae erg aeurg eiug iuhhlh ekjhgaeg iauergi aeiug eriughaeg aiuergberg bgguaerg eirug;aieh'}
-          text4={'erg aeurg eiug iuhhlh ekjhgaeg iauergi aeiug eriughaeg aiuergberg bgguaerg eirug;aiehg eiughaehg aeiugh;aehg ergiuaehg aegiuha;eig aeiguh;aehg aegiu;aehg iguba;ehgae aeug;ae erg aeurg eiug iuhhlh ekjhgaeg iauergi aeiug eriughaeg aiuergberg bgguaerg eirug;aieh'}
+          title={'Research Objectives'}
+          description={'Provide a novel XAI solution to enhance the model explainability of Black-Box models focus on Random Forest, Support Vector Machine, K Nearest Neighbor Logistic Regression by developing a novel counterfactual rule generation mechanism related to the text classification domain.'}
+          text1={`
+            SVM-
+            To develop novel explainable method to enhance the model explainability of :
+            function-based classification models focus on  SVM .
+          `}
+          text2={`
+            RF-
+            To develop novel explainable method to enhance the model explainability of :
+            ensemble models focus on  Random forest .
+          `}
+          text3={`
+            KNN-
+            To develop novel explainable method to enhance the model explainability of :
+            distance-based classification models focus on  KNN .
+          `}
+          text4={`
+            LR-
+            To develop novel explainable method to enhance the model explainability of :
+            regression-based classification models focus on  Logistic regression .
+          `}
         />
       </CustomTabPanel>
     </Box>

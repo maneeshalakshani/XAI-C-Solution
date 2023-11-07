@@ -1,13 +1,10 @@
 import React from 'react'
 
-function ResearchObjective({title, description, text1, text2, text3, text4}) {
+function ResearchGap({title, text1, text2, text3, text4}) {
   return (
     <div>
       <div className='medium-header' style={{color:'white'}}>
         {title}
-      </div>
-      <div className='domain-content-box'>
-        {description}
       </div>
       <div style={{ display: 'flex' }}>
         <ResearchGapBox
@@ -28,14 +25,14 @@ function ResearchObjective({title, description, text1, text2, text3, text4}) {
         <ResearchGapBox
             text={text4}
             title={text4.split('-')[0]}
-            isLast={true}
+            isLast={false}
         />
       </div>
     </div>
   )
 }
 
-export default ResearchObjective
+export default ResearchGap
 
 
 function ResearchGapBox({text, title, isLast}) {
@@ -46,3 +43,4 @@ function ResearchGapBox({text, title, isLast}) {
     </div>
   )
 }
+
