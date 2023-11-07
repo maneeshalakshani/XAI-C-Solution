@@ -27,12 +27,20 @@ function Teams() {
                 Our Team
             </div>
             <div>
-                <Stack direction="row" spacing={4} className='teams-box'>
+                <Stack 
+                    direction={{ sm: 'column', md: 'row' }}
+                    spacing={{ sm: 2, md: 4 }}
+                    className='teams-box'
+                >
                     {teamMembersSupervisors.map((doc, index) => (
                         <TeamCard key={index} name={doc.name} role={doc.role} image={doc.image} />
                     ))}
                 </Stack>
-                <Stack direction="row" spacing={4} className='teams-box'>
+                <Stack 
+                    direction={{ sm: 'column', md: 'row' }}
+                    spacing={{ sm: 2, md: 4 }}
+                    className='teams-box'
+                >
                     {teamMembers.map((doc, index) => (
                         <TeamCard key={index} name={doc.name} role={doc.role} image={doc.image} />
                     ))}

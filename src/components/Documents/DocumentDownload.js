@@ -8,7 +8,7 @@ function DocumentDownload() {
       <div className='center large-header'>
         Documents
       </div>
-      <div style={{margin: '30px 20vh'}}>
+      <div className='document-box'>
         <DocTypeSection
             title={'Project Proposal'}
             docs={ppDocs}
