@@ -16,10 +16,83 @@ export default function ColorsTimeline() {
         date={'January, 2023'} 
         marks={'No marks allocated'} 
       />
-      <TimelineBox color={'error'} content={'srjh,'} title={'aerg'} date={'Nov, 2023'} marks={'20'}/>
-      <TimelineBox color={'grey'} content={'srjh,'} title={'aerg'} date={'Nov, 2023'} marks={'20'}/>
-      <TimelineBox color={'primary'} content={'srjh,'} title={'aerg'} date={'Nov, 2023'} marks={'20'} />
-      <TimelineBox color={'success'} content={'srjh,'} title={'aerg'} date={'Nov, 2023'} marks={'20'} />
+      <TimelineBox 
+        color={'error'} 
+        content={'Once the topic was finalized, the project charter document was submitted for evaluation. This document also included a brief overview on key aspects of the proposed research along with the research problem, research objectives, overall solution as well as member task breakdown of the proposed research.'} 
+        title={'Project Charter Submission'} 
+        date={'January, 2023'} 
+        marks={'No marks allocated'} 
+      />
+      <TimelineBox 
+        color={'grey'} 
+        content={'Presented to a panel of judges in order to provide an overview of the proposed research.'} 
+        title={'Project Proposal Presentation'} 
+        date={'February, 2023'} 
+        marks={'5'} 
+      />
+      <TimelineBox 
+        color={'primary'} 
+        content={'The submission of a report which provides an in-depth analysis pertaining to key aspects of the proposed research along with the research problem, objectives, as well as the overall proposed solution.'} 
+        title={'Project Proposal Report'} 
+        date={'February, 2023'} 
+        marks={'5'} 
+      />
+      <TimelineBox 
+        color={'success'} 
+        content={'The submission of a document that provides an overview of key tasks conducted by members during the implementation phase of the research.'} 
+        title={'Status Document 1'} 
+        date={'July, 2023'} 
+        marks={'1'} 
+      />
+      <TimelineBox 
+        color={'warning'} 
+        content={'Evaluation of 50% completion of the proposed solution by a panel of judges.'} 
+        title={'Progress Presentation 1'} 
+        date={'July, 2023'} 
+        marks={'10'} 
+      />
+      <TimelineBox 
+        color={'error'} 
+        content={'Draft submission of the research paper submitted to the supervisor for evaluation.'} 
+        title={'Research Paper draft submission'} 
+        date={'July, 2023'} 
+        marks={'10'} 
+      />
+      <TimelineBox 
+        color={'primary'} 
+        content={'Submission of the group and individual thesis documents for evaluation.'} 
+        title={'Final Thesis Submission'} 
+        date={'September, 2023'} 
+        marks={'15'} 
+      />
+      <TimelineBox 
+        color={'info'} 
+        content={'Evaluation of 90% completion of the proposed solution by a panel of judges.'} 
+        title={'Progress Presentation 2'} 
+        date={'September, 2023'} 
+        marks={'18'} 
+      />
+      <TimelineBox 
+        color={'grey'} 
+        content={'Submission of the research logbook and status document 2 which provides an overview of all key tasks conducted by members during the implementation phase of the research.'} 
+        title={'Log Book and Status Document 2'} 
+        date={'November, 2023'} 
+        marks={'3'} 
+      />
+      <TimelineBox 
+        color={'secondary'} 
+        content={'Submission of research website for evaluation.'} 
+        title={'Website Assessment'} 
+        date={'November, 2023'} 
+        marks={'2'} 
+      />
+      <TimelineBox 
+        color={'success'} 
+        content={'Final evaluation of the completed product.'} 
+        title={'Final Presentation and Viva'} 
+        date={'October, 2023'} 
+        marks={'25'} 
+      />
     </Timeline>
   );
 }
