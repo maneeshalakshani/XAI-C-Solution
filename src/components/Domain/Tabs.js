@@ -1,6 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
+import Tabs, { tabsClasses } from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -54,6 +54,8 @@ export default function BasicTabs() {
         <Tabs 
             value={value} 
             onChange={handleChange} 
+            variant="scrollable"
+            scrollButtons
             aria-label="basic tabs example"
             sx={{
                 '& .MuiTabs-indicator': {
@@ -64,7 +66,10 @@ export default function BasicTabs() {
                     '&.Mui-selected': {
                       color: 'orange', // Change the color of the selected (active) tab text
                     },
-                  },
+                },
+                [`& .${tabsClasses.scrollButtons}`]: {
+                    '&.Mui-disabled': { opacity: 0.3 },
+                },  
             }}
         >
           <Tab label="Background" {...a11yProps(0)} />

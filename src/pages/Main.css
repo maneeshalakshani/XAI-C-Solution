@@ -1,10 +1,10 @@
-.Main-Container{
+.Main-Container {
     width: 100%;
     height: 100vh;
     position: relative;
 }
 
-.image-container{
+.image-container {
     /* background-image: url('../assets/images/xai-image.jpg'); */
     background-repeat: no-repeat;
     width: 100%;
@@ -13,14 +13,29 @@
     position: absolute;
 }
 
-.image{
+.header-image {
     width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
 }
 
-.black-container{
+/* Apply responsive styles for screens with a maximum width of 768px */
+@media (max-width: 668px) {
+    .header-image {
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+.image {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.black-container {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -28,7 +43,7 @@
     background-color: rgba(0, 0, 0, 0.712);
 }
 
-.header-text{
+.header-text {
     z-index: 3;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -36,12 +51,22 @@
     font-size: 6rem;
 }
 
+@media (max-width: 800px) {
+    .header-text {
+        z-index: 3;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 50vh;
+        font-size: 3rem;
+    }
+}
+
 /* SECTIONS */
 
 
 /* INTRODUCTION SECTION */
 
-.intro-container{
+.intro-container {
     background-color: dodgerblue;
     color: white;
     height: 63vh;
@@ -51,29 +76,59 @@
     padding-right: 10%;
 }
 
-.center{
+@media (max-width: 800px) {
+    .intro-container {
+        color: white;
+        height: 83vh;
+        padding-top: 2vh;
+        padding-bottom: 6vh;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-size: 20px;
+    } 
+}
+
+.center {
     text-align: center;
 }
 
-.large-header{
+.large-header {
     font-size: 4rem;
     font-weight: bold;
 }
 
-.medium-header{
+.medium-header {
     font-size: 2rem;
     margin-top: 20px;
     color: black;
 }
 
-.small-header{
+.small-header {
     font-size: 1.2rem;
     margin-top: 20px;
 }
 
+@media (max-width: 600px) {
+    .large-header {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .medium-header {
+        font-size: 1rem;
+    }
+    
+    .small-header {
+        font-size: 0.8rem;
+    }
+    .intro-container {
+        padding-top: 4vh;
+        height: 35vh;
+    } 
+}
+
 /* DOMAIN SECTION */
 
-.domain-container{
+.domain-container {
     background-color: #222222;
     color: white;
     padding-left: 10%;
@@ -82,7 +137,7 @@
     padding-bottom: 10vh;
 }
 
-.domain-content-box{
+.domain-content-box {
     background-color: white;
     color: black;
     /* height: 50vh; */
@@ -91,11 +146,11 @@
     margin-top: 10px;
 }
 
-.domain-content-box-bg{
+.domain-content-box-bg {
     margin-bottom: 34vh;
 }
 
-.domain-small-content-box{
+.domain-small-content-box {
     background-color: white;
     color: black;
     height: 50vh;
@@ -106,16 +161,34 @@
     /* margin-right: 20px; */
 }
 
+@media (max-width: 700px) {
+    .domain-container {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .domain-content-box {
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+    .domain-small-content-box {
+        height: 30vh;
+        text-align: justify;
+        width: 94%;
+        padding: 0px 15px;
+        margin-top: 20px;
+    }
+}
+
 /* MILESTONES SECTION */
 
-.milestones-container{
+.milestones-container {
     background-color: dodgerblue;
     color: white;
     padding-top: 15vh;
     padding-bottom: 50px;
 }
 
-.timeline-card{
+.timeline-card {
     background-color: white;
     padding: 20px 30px;
     border-radius: 8px;
@@ -123,38 +196,61 @@
     text-align: center;
 }
 
-.timeline-card-title{
+.timeline-card-title {
     font-size: 2rem;
 }
 
-.timeline-card-date{
+.timeline-card-date {
     font-weight: bold;
     margin-top: 0px;
     margin-bottom: 10px;
     color: #a8a8a8;
 }
 
-.timeline-card-content{
+.timeline-card-content {
     margin: 5px 0;
 }
 
-.timeline-card-mark-allocation{
+.timeline-card-mark-allocation {
     margin-top: 30px;
     font-weight: bold;
     text-align: right;
 }
 
+@media (max-width: 600px) {
+    .timeline-card {
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        color: black;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .timeline-card-title {
+        font-size: 1rem;
+    }
+    .timeline-card-mark-allocation {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
 
 /* DOCUMENTS SECTION */
 
-.docs-container{
+.docs-container {
     background-color: white;
     color: black;
     padding-top: 15vh;
     padding-bottom: 15vh;
 }
 
-.docType-title{
+.document-box{
+    margin: 30px 20vh;
+}
+
+.docType-title {
     background-color: orange;
     text-align: center;
     color: white;
@@ -166,7 +262,7 @@
     margin-bottom: 20px;
 }
 
-.doc-table{
+.doc-table {
     display: flex;
     flex-wrap: wrap;
 }
@@ -191,9 +287,32 @@
     margin-bottom: 20px;
 }
 
+@media (max-width: 700px) {
+    .docs-container {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .document-box{
+        margin: 0px 10vh;
+    }
+    .docType-title {
+        /* padding: 10px 30px; */
+        font-size: 0.8rem;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    .doc-item {
+        width: 100%;
+        padding: 10px 130px;
+    }
+}
+
 /* TOOLS & TECHNOLOGIES */
 
-.tools-header{
+.tools-header {
     background-color: #242424;
     padding-top: 5vh;
     padding-bottom: 5vh;
@@ -202,27 +321,38 @@
     border-radius: 5px;
 }
 
-.tools-container{
+.tools-container {
     padding: 25vh 25vh;
+}
+
+@media (max-width: 700px) {
+    .tools-container {
+        padding: 10vh 8vh;
+    }
+    .tools-header {
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        width: 100%;
+    }
 }
 
 
 /* ACHIEVEMENTS SECTION */
 
-.achievements-container{
+.achievements-container {
     background-color: orange;
     padding: 10vh 0;
     color: rgb(240, 233, 233);
 }
 
-.achievements-box{
+.achievements-box {
     display: flex;
     margin: 0 20vh;
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
 
-.achievements-item{
+.achievements-item {
     background-color: white;
     border-radius: 8px;
     color: black;
@@ -231,4 +361,69 @@
     text-align: center;
 }
 
+@media (max-width: 700px) {
+    .achievements-container {
+        padding: 8vh 0;
+    }
+    .achievements-box {
+        margin: 0 10vh;
+        margin-top: 2vh;
+        margin-bottom: 3vh;
+    }
+    .achievements-item {
+        width: 80%;
+        padding: 20px 50px;
+        margin-top: 20px;
+    }
+}
 
+/* TEAM SECTION */
+
+.teams-item {
+    background-color: rgba(255, 255, 255, 0.534);
+    border-radius: 8px;
+    color: black;
+    width: 15%;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.teams-item:hover{
+    background-color: rgba(255, 255, 255, 0.753);
+    cursor: pointer;
+}
+
+.teams-table{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teams-box {
+    display: flex;
+    /* flex-direction: column; */
+    margin: 0 10%;
+    width: 80%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.teams-container {
+    background-color: rgba(0, 0, 0, 0.603);
+    padding: 10vh 0;
+    color: rgb(240, 233, 233);
+    /* height: 100vh; */
+}
+
+@media (max-width: 700px) {
+    .teams-item {
+        background-color: rgba(255, 255, 255, 0.274);
+        color: white;
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    .teams-item:hover{
+        color: black;
+        font-size: 20px;
+    }
+}

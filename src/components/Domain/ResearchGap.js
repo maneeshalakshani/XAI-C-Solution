@@ -1,4 +1,5 @@
 import React from 'react'
+import { Stack } from '@mui/material'
 
 function ResearchGap({title, text1, text2, text3, text4}) {
   return (
@@ -6,7 +7,10 @@ function ResearchGap({title, text1, text2, text3, text4}) {
       <div className='medium-header' style={{color:'white'}}>
         {title}
       </div>
-      <div style={{ display: 'flex' }}>
+      <Stack 
+        direction={{ xs: 'column',sm: 'row', md: 'row' }}
+        spacing={{ xs: 2, sm: 2, md: 2 }}
+      >
         <ResearchGapBox
             text={text1}
             title={text1.split('-')[0]}
@@ -27,7 +31,7 @@ function ResearchGap({title, text1, text2, text3, text4}) {
             title={text4.split('-')[0]}
             isLast={false}
         />
-      </div>
+      </Stack>
     </div>
   )
 }

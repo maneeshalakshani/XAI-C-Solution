@@ -1,3 +1,4 @@
+import { Stack } from '@mui/material'
 import React from 'react'
 
 function ResearchObjective({title, description, text1, text2, text3, text4}) {
@@ -9,7 +10,13 @@ function ResearchObjective({title, description, text1, text2, text3, text4}) {
       <div className='domain-content-box'>
         {description}
       </div>
-      <div style={{ display: 'flex' }}>
+      <Stack
+        direction={{ xs: 'column',sm: 'row', md: 'row' }}
+        spacing={{ xs: 2, sm: 2, md: 2 }}
+        sx={{
+          marginTop: '20px'
+        }}
+      >
         <ResearchGapBox
             text={text1}
             title={text1.split('-')[0]}
@@ -30,7 +37,7 @@ function ResearchObjective({title, description, text1, text2, text3, text4}) {
             title={text4.split('-')[0]}
             isLast={true}
         />
-      </div>
+      </Stack>
     </div>
   )
 }
