@@ -81,7 +81,7 @@ export default function BasicTabs() {
       <CustomTabPanel value={value} index={0}>
         <Background 
             title={'Background'} 
-            text={'jh uhg iuhg.s iuksht.'} 
+            text={'Explainable Artificial Intelligence (XAI) is a field of artificial intelligence (AI) that focuses on developing models and systems that provide clear and understandable explanations for their decision-making processes. The goal of XAI is to enhance transparency and interpretability in AI systems, allowing users to comprehend how algorithms arrive at specific conclusions. This is particularly crucial in critical applications such as healthcare, finance, and autonomous vehicles, where trust and accountability are paramount. XAI methods aim to bridge the gap between the complexity of advanced AI models and the need for human interpretable insights, fostering trust and facilitating effective collaboration between AI systems and human users.'} 
         />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>

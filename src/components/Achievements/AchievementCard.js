@@ -12,10 +12,10 @@ function AchievementCard({ content, title }) {
                 height={150}
             />
             <div>
-                <div className='medium-header'>
+                <div className='medium-header' style={{textAlign: 'justify'}}>
                     {title}
                 </div>
-                <div className='small-header'>
+                <div className='small-header' style={{textAlign: 'justify'}}>
                     {content}
                 </div>
             </div>
